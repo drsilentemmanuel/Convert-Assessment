@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=h, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<header>
+		<h1>Shop</h1>
+	</header>
+	<main>
+		<!-- Filter -->
+		<div id="filter">
+			<h3>Filter</h3>
+			<div class="filter selected-filter">
+				<h4><b>Selected Filters</b></h4>
+				<p>
+					<span><b>X</b></span>
+					<span>R0 - R10</span>
+				</p>
+				<p>
+					<span><b>X</b></span>
+					<span>Clothing</span>
+				</p>
+			</div>
+
+			<div class="filter price">
+				<h4><b>Price</b></h4>
+				<form action="/action_page.php">
+					<input type="checkbox" id="price1" name="price1" value="R0 - R10">
+					<label for="price1"> R0 - R10</label><br>
+					<input type="checkbox" id="price2" name="price2" value="R10 - R20">
+					<label for="price2">R10 - R20</label><br>
+					<input type="checkbox" id="price3" name="price3" value="R20 - R30">
+					<label for="price3"> R20 - R30</label><br><br>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+
+			<div class="filter categories">
+				<h4><b>Categories</b></h4>
+				<form action="/action_page.php">
+					<input type="checkbox" id="price1" name="price1" value="R0 - R10">
+					<label for="price1"> Apparel</label><br>
+					<input type="checkbox" id="price2" name="price2" value="R10 - R20">
+					<label for="price2">Bundles</label><br>
+					<input type="checkbox" id="price3" name="price3" value="R20 - R30">
+					<label for="price3"> Clothing</label><br><br>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+			<div class="filter availability">
+				<h4><b>Availability</b></h4>
+				<form action="/action_page.php">
+					<input type="checkbox" id="price1" name="price1" value="R0 - R10">
+					<label for="price1"> In stock</label><br>
+				</form>
+			</div>
+		</div>
+
+		<!-- Main Catalogue Products -->
+
+		<article id="product-list">
+			<!-- Products will be rendered here by JS -->
+		</article>
+	</main>
+
+	<script src="main.js"></script>
+</body>
+
+</html>

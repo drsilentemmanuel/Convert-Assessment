@@ -1,0 +1,151 @@
+<div><div id="crp-filter-container">
+
+<h1 class="woocommerce-products-header__title page-title"><h1 class="woocommerce-products-header__title page-title" style="color: white;">Shop</h1></h1>
+    <h1 class="crp-filter-heading">Filters</h1>
+
+    <div id="crp-selected-filters" class="crp-shadow-box selected-filters-section">
+        <h4>Selected Filters</h4>
+        <ul id="selected-filters-list">
+            </ul>
+    </div>
+
+    <div class="crp-filter-section crp-shadow-box" data-filter-type="price-filter">
+        <h4>Price</h4>
+        </div>
+
+    <div class="crp-filter-section crp-shadow-box" data-filter-type="category-filter">
+        <h4>Categories</h4>
+        </div>
+
+    <div class="crp-filter-section crp-shadow-box" data-filter-type="stock-filter">
+        <h4>Availability</h4>
+        </div>
+
+</div>
+
+<style>
+    /* Global Font Settings */
+    body {
+       /* font-family: 'Source Sans Pro', sans-serif;*/
+    }
+    h1, h2, h3, h4, h5, h6 {
+       /* font-family: 'Montserrat', sans-serif; */
+    }
+
+    /* Basic styling for the filter scaffold */
+    #crp-filter-container {
+        width: 280px; /* Adjusted width for better fit with PDF layout */
+        float: left; /* Keep float left */
+        padding: 0; /* Remove padding from container as inner boxes will have their own */
+        background-color: transparent; /* Main container background should be transparent */
+        box-sizing: border-box; /* Include padding in width */
+    }
+
+    #crp-filter-container h3 { /* Changed from h1 to h3 based on your HTML */
+        margin-top: 0;
+        margin-bottom: 20px; /* Space after main "Filters" title */
+        color: #333;
+        font-size: 2.6rem; /* Slightly larger for main title */
+        /* font-weight: bold;*/
+        padding-left: 15px; /* Align text with content inside boxes */
+       /* font-family: 'Montserrat', sans-serif;  Explicitly use Montserrat for this h3 */
+    }
+
+    /* Style for distinct shadowed containers */
+    .crp-shadow-box {
+        background-color: #fff; /* White background for all boxes */
+        /* border-radius: 8px; */ /* Slightly rounded corners - commented out as per previous code */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow effect made darker (opacity increased to 0.2) */
+        padding: 15px; /* Padding inside each box */
+        margin-bottom: 20px; /* Separation between boxes */
+        box-sizing: border-box;
+    }
+
+    .crp-filter-section {
+        /* This class now primarily defines the structure before .crp-shadow-box styles */
+    }
+
+    .crp-filter-section h4 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #555;
+        font-size: 1.5rem; /* Section titles */
+       /* font-family: 'Montserrat', sans-serif; /* Explicitly use Montserrat for this h4 */
+    }
+
+    .crp-filter-section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .crp-filter-section li {
+        margin-bottom: 8px; /* Spacing between options */
+        display: flex;
+        align-items: center;
+      /* font-family: 'Source Sans Pro', sans-serif; /* Ensure filter options use body font */
+    }
+
+    .crp-filter-section input[type="checkbox"] {
+        margin-right: 8px; /* Space between checkbox and label */
+    }
+
+    /* Selected Filters Section Styling */
+    /* This targets the div with class 'selected-filters-section' which now exists */
+    .selected-filters-section { 
+        /* Inherits .crp-shadow-box styles for background and shadow */
+        border: none; /* No extra border needed */
+        display: none; /* Hidden by default, will show with JS when filters are applied */
+    }
+
+    .selected-filters-section h4 { /* Corrected from #crp-selected-filters h4 */
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #333;
+       /* font-family: 'Montserrat', sans-serif; /* Explicitly use Montserrat for this h4 */
+    }
+
+    #selected-filters-list { /* This targets the UL directly by ID */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #selected-filters-list li { /* This targets the LI elements inside the UL */
+        background-color: transparent; /* Ensure no background */
+        padding: 0; /* No padding for individual "tags" */
+        margin-bottom: 5px; /* Keep a small margin between selected text items */
+        border-radius: 0; /* No border radius */
+        border: none; /* No border */
+        display: flex;
+        gap: 3px; /* Smaller gap between 'x' and text for a tighter look */
+        justify-content: flex-start; /* Align items to the start */
+        align-items: center;
+        font-size: 1rem; /* Slightly adjusted font size for selected text */
+        color: #333; /* Ensure text color is consistent */
+       /* font-family: 'Source Sans Pro', sans-serif; /* Ensure selected filter text uses body font */
+    }
+
+    .remove-filter {
+        cursor: pointer;
+        color: #333; /* Black/dark grey as requested */
+        font-weight: bold;
+        font-size: 1rem; /* Slightly larger 'x' for visibility */
+        line-height: 1; /* Helps with vertical alignment of the 'x' */
+        padding: 0 2px; /* Small padding to make the 'x' clickable area a bit larger */
+    }
+
+    .crp-filter-heading {
+        font-family: "Source Sans Pro", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: -1px;
+        line-height: 50.8506px;
+        text-decoration: none;
+        color: #333333;
+        margin-bottom: 20px;
+    }
+</style></div>

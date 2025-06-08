@@ -1,0 +1,27 @@
+main {
+	display: flex;
+}
+
+article {
+	display: flex;
+}
+
+.filter {
+	border: 1px solid rgb(202, 200, 200);
+	background-color: #ffffff;
+	padding-left: .5em;
+	padding-right: 2.5em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	box-shadow: 0 5px rgb(187, 184, 184);
+	margin-bottom: 1em;
+}
+
+article {
+	display: flex;
+	margin: 0 auto;
+}
+
+.product-details {
+	margin: 4px
+}

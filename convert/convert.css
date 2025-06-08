@@ -1,0 +1,16 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.widget a.button {
+    background-color: #33b249 !important;   /* Sets the green background */
+    border-color: #33b249 !important;       /* Matches the border to the background */
+    color: #ffffff !important;             /* Sets the text color to white for contrast */
+}
+
+@media (max-width: 568px) {
+    #content > div {
+        flex-direction: column;
+    }
+}
